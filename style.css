@@ -1,0 +1,363 @@
+
+:root {
+
+    --Main-Black: #000;
+    --Main-White: #fff;
+    --Text-Font-Color : #dadada93;
+    --Text-Font-color2 :#86868b;
+    --Button-Orange :#FF5A00;
+    --Button-Orange-light :#e26928;
+
+
+/* ------------ FONT ------------ */
+    --Text-Font-2 : 'Roboto',sans-serif; 
+
+}
+
+/* ----------- MAIN BODY -------------------- */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+/* ---------------- PAGE -------------------------------- */
+#page {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Main-Black);
+}
+
+#page>nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0px 20px;
+    
+    height: 7vh;
+    width: 50vw;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+#page>nav>button {
+    padding: 7px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--Main-White);
+}
+
+#page>nav>h3 {
+    font-weight: 400;
+
+}
+
+#page>video {
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page-bottom {
+    height: 20%;
+    width: 20%;
+
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#page-bottom>h3 {
+    /* color: var(--Main-White); */
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: var(--Text-Font-Color);
+    margin-bottom: 1vw;
+}
+
+
+
+/* ----------------------- PAGE 1 ------------------------ */
+
+#page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--Main-White);
+}
+
+#page1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page1>h1{
+    font-size: 4vw;
+    color: var(--Main-White);
+    font-weight: 400;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+
+/* ----------------------- PAGE 2 ------------------------------ */
+
+#page2{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+#page2>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page2>h1{
+    font-size: 4vw;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+}
+
+
+/* ------------------  PAGE 3 ------------------------------ */
+
+#page3{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+#page3>img{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#page3-upper{
+    height: 25%;
+    width: 35%;
+    position: absolute;
+    z-index: 9;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page3-upper>img{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+
+/* ------------------PAGE 3 upper-inner ------------------ */
+
+#page3-upper-inner{
+    position: absolute;
+    bottom: 0%;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    color: #ff823d;
+}
+
+
+#page3-upper-inner>li {
+    list-style: none;
+}
+
+#page3-upper-inner>li>h3{
+    font-weight: 700;
+    scale: 1.3x;
+    font-size: 1.2rem;
+}
+
+
+#page3-upper-inner>li>h3:hover {
+    font-weight: 900;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+#page3-upper-inner>i { 
+    display: flex;
+    padding: 0px 0px 0px 2px;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------ PAGE 3 end ------------------ */
+
+#page3>button{
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    border: 1px solid #000;
+    font-weight: 500;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 1.4vw;
+}
+
+#available-info {
+    position: absolute;
+    bottom: 0%;
+    height: 140%;
+    left: 38%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    color: #8A8A8F;
+
+    z-index: 1;
+}
+
+/* ------------------ PAGE 4 ------------------------------ */
+
+#page4 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+#page4>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+#page4-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: var(--Main-White);
+    font-size: 2vw;
+}
+
+/* ------------------   PAGE 5 ------------------------------ */
+
+#page5 {
+    display: flex;
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+    /* background-color: green; */
+}
+
+.page5__left-section {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    /* background-color: blue; */
+    
+}
+.page5__left-section>h2 {
+    font-size: 2.3vw;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    transform: translateX(-50%);
+    transform: translateY(50%);
+    scale: 1.1;
+} 
+
+.page5__right-section {
+    /* background-color: red; */
+
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding-left: 5vw;
+   
+}
+
+.page5__right-section>p{
+    font-weight: 600;
+
+    font-size: 19px;
+    width: 80%;
+    color: var(--Text-Font-color2);
+    padding-bottom: 40px;
+}
+
+.page5__right-section>button {
+    padding: 17px 37px 17px 27px;
+    border: none;
+    background-color: var(--Button-Orange);
+    color: var(--Main-White);
+    font-weight: 400;
+    border-radius: 50px;
+    font-size: 1.3vw;
+    margin-top: 1.5vw;
+}
+
+.page5__right-section>button:hover{
+    background-color: var(--Button-Orange-light);
+    cursor: pointer;
+}
+.page5__right-section>button>i {
+    height: 50px;
+    width: 30px;
+    padding: 0px 16px 0px 0px;
+} 
+
+
+/* ------------------  PAGE 6 ------------------------------ */
+
+/* ------------------  PAGE 7 ------------------------------ */
+
+/* ------------------PAGE 8 ------------------------------ */
