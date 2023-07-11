@@ -68,7 +68,7 @@ gsap.to("#page-bottom",{
   opacity:0
 })
 
-
+// ---------- tl & tl1 ------------------------------
 
 var tl = gsap.timeline({
   scrollTrigger:{
@@ -106,7 +106,7 @@ tl1.to("#page2>h1",{
 })
 
 
-
+// -------------------- tl 2 ------------------------------------
 
 var tl2 = gsap.timeline({
   scrollTrigger:{
@@ -124,6 +124,7 @@ tl2.to("#page4>#page4-center",{
 })
 
 
+// -------------- CANVAS -----------------------------
 
 function canvas(){
   const canvas = document.querySelector("#page7>canvas");
@@ -526,6 +527,7 @@ end: `80% top`,
 canvas1();
 
 
+// -------------------- tl 3 -----------------------------------
 
 var tl3 = gsap.timeline({
 scrollTrigger:{
@@ -541,6 +543,10 @@ scrollTrigger:{
 tl3.to("#page21>#troff",{
 opacity:0
 })
+
+
+// ------------ tl 4 ---------------------------------
+
 
 var tl4 = gsap.timeline({
 scrollTrigger:{
