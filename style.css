@@ -370,7 +370,7 @@ html, body {
     position: relative;
     height: 70vh;
     width: 100vw;
-    background-color: var(--bg-main-2);
+    background-color: var(--bg-main-2-canvas);
 }
 
 #page6>h3 {
@@ -603,10 +603,119 @@ html, body {
     flex-direction: column;
 
     position: absolute;
-    bottom: 0%;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 
-    color: var(--Main-Black);
-    background-color: var(--Main-White);
+    color: var(--Main-White);
+    background-color: var(--Main-Black);
+    text-align: center;
 }
 
 /* ------------------- PAGE 19 --------------------- */
+
+#page19{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--Main-White);
+    position: relative;
+    height: 30vh;
+    width: 100vw;
+    background-color: var(--Main-Black);
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5vw;
+}
+#page19>h5{
+    width: 35%;
+}
+
+/* ---------------- PAGE 20 ----------------------- */
+
+#page20{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page20>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#page20__center{
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    bottom: 18%;
+    right: 5%;
+    color: #fff;
+}
+#page20__center>h1{
+    margin-bottom: 1.7vw;
+}
+
+/* ---------------- PAGE 21 ----------------------- */
+#page21{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page21>#troff{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    z-index: 9;
+}
+#page21>#tron{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+}
+
+/* ---------------- PAGE 22 ----------------------- */
+
+#page22{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page22>#glow-off{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+    z-index: 9;
+}
+#page22>#glow-on{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 50%;
+}
+
+/* ---------------- PAGE 23 ----------------------- */
+
+#page23{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+}
+#page23>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity:0
+}
+
+/* ------------------------ day 3 - end ------------------- */
