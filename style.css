@@ -3,7 +3,7 @@
 
     --Main-Black: #000;
     --Main-White: #fff;
-    --Text-Font-color :#86868b;
+    --Text-Font-color :#8c8c91;
     --Text-Hightlight-Font-color :#1d1d1f;
     --Button-Orange :#FF5A00;
     --Button-Orange-light :#e26928;
@@ -12,6 +12,7 @@
 
 
 /* ------------ FONT ------------ */
+    --Text-Font-1 : SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     --Text-Font-2 : 'Roboto',sans-serif; 
 
 }
@@ -21,7 +22,9 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Roboto',sans-serif;
+    font-family: var(--Text-Font-1);
+
+    font-size: 62.5%;
 
 }
 
@@ -48,7 +51,7 @@ html, body {
     align-items: center;
     justify-content: space-between;
 
-    padding: 0px 20px;
+    padding: 0rem 2.0rem;
     
     height: 7vh;
     width: 50vw;
@@ -60,14 +63,16 @@ html, body {
 }
 
 #page>nav>button {
-    padding: 7px 20px;
-    border-radius: 50px;
+    padding: .7rem 2.0rem;
+    border-radius: 5.0rem;
     border: none;
     background-color: var(--Main-White);
+    font-size: 1.4rem;
 }
 
 #page>nav>h3 {
     font-weight: 400;
+    font-size: 2rem;
 
 }
 
@@ -101,6 +106,7 @@ html, body {
     /* font-family: Arial, Helvetica, sans-serif; */
     color: var(--Text-Font-color);
     margin-bottom: 1vw;
+    font-size: 3rem;
 }
 
 
@@ -121,7 +127,7 @@ html, body {
 }
 
 #page1>h1{
-    font-size: 4vw;
+    font-size: 4.8rem;
     color: var(--Main-White);
     font-weight: 400;
     position: absolute;
@@ -145,7 +151,7 @@ html, body {
     object-fit: cover;
 }
 #page2>h1{
-    font-size: 4vw;
+    font-size: 4.8rem;
     position: absolute;
     bottom: 20%;
     left: 50%;
@@ -153,13 +159,14 @@ html, body {
     white-space: nowrap;
     text-align: center;
     color: #fff;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 
 /* ------------------  PAGE 3 ------------------------------ */
 
 #page3{
+    display: flex;
     position: relative;
     height: 100vh;
     width: 100vw;
@@ -180,6 +187,12 @@ html, body {
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    
 }
 #page3-upper>img{
     position: absolute;
@@ -187,6 +200,16 @@ html, body {
     left: 50%;
     transform: translateX(-50%);
     width: 60%;
+}
+
+#available-info>h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--Text-Font-color);
+
+
 }
 
 
@@ -199,8 +222,9 @@ html, body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px 80px;
+    justify-content: space-evenly;
+    /* padding: 1.8rem 0rem 1.9rem; */
+    margin: 1.8rem 0rem 1.9rem;
     color: var(--Button-Orange);
 }
 
@@ -210,22 +234,21 @@ html, body {
 }
 
 #page3-upper-inner>li>h3{
-    font-weight: 700;
-    scale: 1.3x;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 2.5rem;
 }
 
 
 #page3-upper-inner>li>h3:hover {
-    font-weight: 900;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 2.6rem;
     cursor: pointer;
 
 }
 
 #page3-upper-inner>i { 
     display: flex;
-    padding: 0px 0px 0px 2px;
+    padding: 0rem 0rem 0rem .2rem;
     
     justify-content: center;
     align-items: center;
@@ -238,28 +261,15 @@ html, body {
     bottom: 7%;
     left: 50%;
     transform: translateX(-50%);
-    padding: 15px 30px;
-    border: 1px solid #000;
+    padding: 1.5rem 3.0rem;
+    border: .1rem solid #000;
     font-weight: 500;
     background-color: #fff;
-    border-radius: 50px;
+    border-radius: 5.0rem;
     font-size: 1.4vw;
 }
 
-#available-info {
-    position: absolute;
-    bottom: 0%;
-    height: 140%;
-    left: 38%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 80px;
-    color: var(--Text-Font-color);
 
-    z-index: 1;
-}
 
 /* ------------------ PAGE 4 ------------------------------ */
 
@@ -287,6 +297,19 @@ html, body {
     font-size: 2vw;
 }
 
+#page4-center>h3{
+    font-size: 2.4rem;
+
+}
+
+#page4-center>h1{
+    font-size: 8rem;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    font-family: var(--Text-Font-1);
+}
+    
 /* ------------------   PAGE 5 ------------------------------ */
 
 #page5 {
@@ -330,19 +353,19 @@ html, body {
 .page5__right-section>p{
     font-weight: 600;
 
-    font-size: 19px;
+    font-size: 1.9rem;
     width: 80%;
     color: var(--Text-Font-color2);
-    padding-bottom: 40px;
+    padding-bottom: 4.0rem;
 }
 
 .page5__right-section>button {
-    padding: 17px 37px 17px 27px;
+    padding: 1.7rem 3.7rem 1.7rem 2.7rem;
     border: none;
     background-color: var(--Button-Orange);
     color: var(--Main-White);
     font-weight: 500;
-    border-radius: 50px;
+    border-radius: .0rem;
     font-size: 1.3vw;
     margin-top: 1.5vw;
     scale: 0.9;
@@ -353,9 +376,9 @@ html, body {
     cursor: pointer;
 }
 .page5__right-section>button>i {
-    height: 50px;
-    width: 30px;
-    padding: 0px 16px 0px 0px;
+    height: 5.0rem;
+    width: 3.0rem;
+    padding: 0rem 1.6rem 0rem 0rem;
 } 
 
 
@@ -375,18 +398,18 @@ html, body {
 
 #page6>h3 {
     margin-bottom: 1vw;
-    font-size: 2vw;
+    font-size: 2.4rem;
 
 }
 
 #page6>h1 {
     margin-bottom: 1.5vw;
-    font-size: 4vw;
+    font-size: 8rem;
 }
 
-#page>p {
-    font-size: 1.2vw;
-    width: 60%;
+#page6>p {
+    font-size: 2.4rem;
+    width: 40%;
     font-weight: 700;
     color: var(--Text-Font-color);
 }
@@ -415,7 +438,7 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     left: 5%;
-    font-size: 1.4vw;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--Text-Font-color);
     z-index: 99;
@@ -423,6 +446,7 @@ html, body {
 }
 #page8>h1>span , #page10>h1>span , #page12>h1>span{
     color: #000;
+    font-size: 2rem;
 }
 
 /* ---------- right side ----------------- */
@@ -432,7 +456,7 @@ html, body {
     top: 50%;
     transform: translateY(-50%);
     right: 5%;
-    font-size: 1.4vw;
+    font-size: 2rem;
     font-weight: 700;
     color: var(--Text-Font-color);
     z-index: 99;
@@ -440,6 +464,7 @@ html, body {
 }
 #page9>h1>span , #page11>h1>span , #page13>h1>span{
     color: #000;
+    font-size: 2rem;
 }
 /* ------------ CANVAS ENDED ---------------------------- */
 
@@ -515,17 +540,22 @@ html, body {
 
 #page16>p {
     position: absolute;
-    width: 50%;
+    width: 35%;
     color: var(--Text-Font-color);
-    font-weight: 500;
+    font-weight: 510;
     top: 5%;
+    font-size: 2.2rem;
+    margin: 6rem 0;
+    /* padding: 16rem 0; */
 }
 
 #page16>p>span {
     color: var(--Text-Hightlight-Font-color);
+    font-size: 2.1rem;
 }
 
 #page16>img {
+    top: 30%;
     width: 60%;
     position: absolute;
     bottom: 0%;
@@ -534,7 +564,7 @@ html, body {
 #page16>button {
     position: absolute;
     bottom: 10%;
-    padding: 10px 20px;
+    padding: 1.0rem 2.0rem;
     font-size: 1.5vw;
 
     background-color: var(--Button-Orange);
@@ -542,7 +572,7 @@ html, body {
     font-weight: 500;
     border: none;
 
-    border-radius: 30px;
+    border-radius: 30rem;
 }
 
 /* ------------------- PAGE 17 --------------------- */
@@ -558,18 +588,22 @@ html, body {
     color: #fff;
 }
 #page17>h4{
-    font-size: 2vw;
+    font-size: 2.2rem;
     font-weight: 500;
     margin-bottom: 2vw;
 }
 #page17>h1{
-    font-size: 5vw;
-    line-height: 1;
-    font-weight: 500;
     margin-bottom: 3vw;
+
+    font-size: 8.0rem;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+
 }
 #page17>p{
-    font-size: 1.5vw;
+    font-size: 2.4rem;
     font-weight: 500;
     margin-bottom: 2vw;
     color: #ffffff7c;
@@ -578,6 +612,7 @@ html, body {
 }
 #page17>p>span{
     color: #fff;
+    font-size: 2.4rem;
 }
 
 /* ------------------- PAGE 18 --------------------- */
@@ -625,10 +660,13 @@ html, body {
     background-color: var(--Main-Black);
     flex-direction: column;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 4.2rem;
+    font-family: var(--Text-Font-1);
 }
 #page19>h5{
+    margin-top: 1.5rem;
     width: 35%;
+    font-size: 2.1rem;
 }
 
 /* ---------------- PAGE 20 ----------------------- */
@@ -647,14 +685,22 @@ html, body {
 #page20__center{
     position: absolute;
     height: 20%;
-    width: 20%;
+    width: 22%;
+    left: 55%;
     bottom: 18%;
     right: 5%;
     color: #fff;
 }
 #page20__center>h1{
     margin-bottom: 1.7vw;
+    font-size: 3.2rem;
 }
+
+#page20__center>p {
+    font-size: 2.1rem;
+}
+
+
 
 /* ---------------- PAGE 21 ----------------------- */
 #page21{
