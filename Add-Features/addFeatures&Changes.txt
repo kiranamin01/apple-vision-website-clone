@@ -1,3 +1,4 @@
-Add Nav bar as per website
-add remaining pages as per main website 
-make it responsive 
+Add Nav bar as per website ❌
+add remaining pages as per main website ❌
+make it responsive - Added Rem value to become responsive
+                   - add media queries --
